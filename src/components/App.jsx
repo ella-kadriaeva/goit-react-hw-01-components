@@ -1,4 +1,7 @@
-export const App = () => {
+import User from './User.js';
+import user from '../user.json';
+
+export  const App = () => {
   return (
     <div
       style={{
@@ -10,7 +13,12 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <User
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+      />
     </div>
   );
 };
