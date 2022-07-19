@@ -1,0 +1,19 @@
+.item {
+min-height: 50px;
+min-width: 90px;
+border: 1px solid #f5f4fa;
+color: #212121;
+line-height: 2;
+font-weight: 700;
+}
+.status {
+margin: 0 auto;
+}
+
+.avatar {
+margin: 0 auto;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+border: none;
+}

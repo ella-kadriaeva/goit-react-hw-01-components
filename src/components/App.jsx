@@ -1,7 +1,10 @@
-import Profile from './Profile.js';
+import Profile from './Profile/Profile.js';
 import Statistics from './Statistics.js';
+import Section from './Section/Section.js';
+import FriendList from './FriendList';
 import user from '../user.json';
 import data from '../data.json';
+import friends from '../friends.json';
 
 export  const App = () => {
   return (
@@ -22,7 +25,13 @@ export  const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" items={data} />
+      <Section title="Upload stats" >
+        <Statistics items={data} />
+      </Section>
+
+      <FriendList friends={friends} />
+    
+
     </div>
   );
 };

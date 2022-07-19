@@ -2,7 +2,7 @@ import Statistic from './Statistic';
 import PropTypes from 'prop-types';
 
 export default function Statistics({items}) {
-return (
+    return (
     <ul class="stat-list">
         {items.map(item => (
             <li key={item.id} class="item">
@@ -12,14 +12,15 @@ return (
                 />
             </li>
         ))}
-    </ul>  
+    </ul>      
 )
 };
 
 Statistics.propTypes = {
+    
 items: PropTypes.arrayOf(
     PropTypes.shape({
     id: PropTypes.string.isRequired,
     }),
-),
+    ),
 };
