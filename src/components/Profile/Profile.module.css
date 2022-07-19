@@ -1,7 +1,6 @@
 .profile {
 min-height: 110px;
 min-width: 300px;
-
 border: 1px solid #f5f4fa;
 color: #212121;
 line-height: 2;
@@ -38,7 +37,6 @@ font-size: 20px;
 }
 .stats {
 border: 1px solid #f5f4fa;
-
 margin-right: auto;
 margin-left: auto;
 background-color: rgb(192, 197, 197);
