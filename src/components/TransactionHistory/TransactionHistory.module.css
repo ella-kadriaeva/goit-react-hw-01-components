@@ -2,7 +2,8 @@
     font-size: 12px;
     font-weight: 400;
     text-align: left;
-    
+    width: 600px;
+    margin-left: 50px;
 }
 th {
     background-color: rgb(103, 224, 224);
