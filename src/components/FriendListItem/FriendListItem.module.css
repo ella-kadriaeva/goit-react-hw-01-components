@@ -11,8 +11,15 @@ display: block;
 height: 10px;
 width: 10px;
 border-radius: 50%;
-background-color: blue;
+
 margin-right: 20px;
+}
+
+.off {
+background-color: #f32525;
+}
+.active {
+background-color: rgb(43, 255, 0);
 }
 
 .avatar {
@@ -26,4 +33,7 @@ margin: 0 auto;
 font-size: 24px;
 line-height: 2;
 font-weight: 400;
+}
+.friends {
+    margin-left: 30px;
 }

@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export default function Transaction({ type, amount, currency }) {
 return (
-<div>
-    <td>{type}</td>
-    <td>{amount}</td>
-    <td>{currency}</td>
-</div>   
+        <tr>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+        </tr>   
 )
 };
 

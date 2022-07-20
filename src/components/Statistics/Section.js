@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Section.module.css'
+import css from './Statistic.module.css'
 export default function Section({ title, children }) {
     return (
 <section className={css.statistics}>

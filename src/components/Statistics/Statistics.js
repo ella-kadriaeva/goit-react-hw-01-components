@@ -1,17 +1,15 @@
-import Statistic from '../Statistic/Statistic';
+import Statistic from './Statistic';
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css'
+import css from './Statistic.module.css'
 
 export default function Statistics({items}) {
     return (
     <ul className={css.block}>
         {items.map(item => (
-            <li key={item.id} className={css.item}>
-                <Statistic
+            <Statistic key={item.id}
                     label={item.label}
                     percentage={item.percentage}
-                />
-            </li>
+            />
         ))}
     </ul>      
 )
