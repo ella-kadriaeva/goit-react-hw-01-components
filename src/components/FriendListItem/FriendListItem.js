@@ -11,7 +11,7 @@ return (
 <div className={css.item}>
 <span  className={spanClasses.join(" ")}></span>
     <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
-    <p className={css.name}>{name}</p>
+            <p className={css.name}>{name}</p>
 </div>
     
 )
