@@ -1,5 +1,4 @@
 import Profile from './Profile/Profile.js';
-import Descriptions from './Profile/Description.js';
 import ProfileSection from './Profile/ProfileSection';
 import Statistics from './Statistics/Statistics.js';
 import Section from './Statistics/Section.js';
@@ -15,14 +14,9 @@ export const App = () => {
   return (
     <Container>
       <ProfileSection>
-        <Descriptions
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-        />
-        <Profile stats={user.stats} />
+        <Profile user={user} />
       </ProfileSection>
+
       <Section title="Upload stats">
         <Statistics items={data} />
       </Section>
