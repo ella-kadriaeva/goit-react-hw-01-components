@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import css from './Profile.module.css';
+import { Avatar, BlockDescription, Name, Tag, Location } from './ProfileSt.steiled';
 export default function Descriptions({ avatar, username, tag, location }) {
   return (
-    <div className={css.description}>
-      <img src={avatar} alt={username} className={css.avatar} />
-      <p className={css.name}>{username}</p>
-      <p className={css.tag}>{tag}</p>
-      <p className={css.location}>{location}</p>
-    </div>
+    <BlockDescription>
+          <Avatar src={avatar } alt={username} />
+      <Name>{username}</Name>
+      <Tag>{tag}</Tag>
+      <Location>{location}</Location>
+    </BlockDescription>
   );
 }
 Descriptions.propTypes = {
